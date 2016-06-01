@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.learn2develop.calculator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+        <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+            
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/nameapp"
+        android:theme="@style/AppTheme" >
+
+<activity
+            android:name="net.learn2develop.calculator.SplashScreen"
+            android:label="@string/nameapp" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<activity
+            android:name="net.learn2develop.calculator.First"
+            android:label="@string/nameapp" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="net.learn2develop.calculator.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.First" />
+				<action android:name="android.intent.action.Tnc" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+         <activity
+            android:name="net.learn2develop.calculator.Tnc"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Login" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+		<activity
+            android:name="net.learn2develop.calculator.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.First" />
+                <action android:name="android.intent.action.Login" />
+                <action android:name="android.intent.action.Bmi" />
+                <action android:name="android.intent.action.Exsugg" />
+                <action android:name="android.intent.action.Nut" />
+                <action android:name="android.intent.action.Baldiet" />
+                <action android:name="android.intent.action.Aboutme" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		
+		<activity
+            android:name="net.learn2develop.calculator.Result"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Nut" />
+                <action android:name="android.intent.action.Checkedoptions" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+		<activity
+            android:name="net.learn2develop.calculator.Checkedoptions"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Result" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+		<activity 
+    		android:name="net.learn2develop.calculator.Aboutme"
+    		android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MainActivity"/>
+                <action android:name="android.intent.action.Bmi" />
+                <action android:name="android.intent.action.Exsugg" />
+                <action android:name="android.intent.action.Nut" />
+                <action android:name="android.intent.action.Baldiet" />
+                <action android:name="android.intent.action.Aboutme" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
+
+		<activity 
+    		android:name="net.learn2develop.calculator.Bmi"
+    		android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MainActivity"/>
+                <action android:name="android.intent.action.Bmi" />
+                <action android:name="android.intent.action.Exsugg" />
+                <action android:name="android.intent.action.Nut" />
+                <action android:name="android.intent.action.Baldiet" />
+                <action android:name="android.intent.action.Aboutme" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		
+		<activity 
+		    android:name="net.learn2develop.calculator.Baldiet"
+		    android:label="@string/app_name">
+		    <intent-filter>
+                <action android:name="android.intent.action.MainActivity"/>
+                <action android:name="android.intent.action.Bmi" />
+                <action android:name="android.intent.action.Exsugg" />
+                <action android:name="android.intent.action.Nut" />
+                <action android:name="android.intent.action.Baldiet" />
+                <action android:name="android.intent.action.Aboutme" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+		<activity 
+		    android:name="net.learn2develop.calculator.Exsugg"
+		    android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MainActivity"/>
+                <action android:name="android.intent.action.Bmi" />
+                <action android:name="android.intent.action.Exsugg" />
+                <action android:name="android.intent.action.Nut" />
+                <action android:name="android.intent.action.Baldiet" />
+                <action android:name="android.intent.action.Aboutme" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+		<activity 
+		    android:name="net.learn2develop.calculator.Nut"
+		    android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MainActivity"/>
+                <action android:name="android.intent.action.Bmi" />
+                <action android:name="android.intent.action.Exsugg" />
+                <action android:name="android.intent.action.Nut" />
+                <action android:name="android.intent.action.Baldiet" />
+                <action android:name="android.intent.action.Aboutme" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+       </activity>
+
+</application>
+
+</manifest>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"  
+android:background="@drawable/ex"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:layout_gravity="center_vertical" >  
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView
+
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/caloLabel"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+    <EditText
+        android:id="@+id/caloText"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" >
+ 
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/bmiLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+    <EditText
+        android:id="@+id/bmiText"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+ 
+    <Button
+        android:id="@+id/calculate2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="calculateClickHandler"
+        android:text="@string/sugg" />
+ 
+    <TextView
+        android:id="@+id/result4Label"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EmptyString"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+ 
+ </LinearLayout>
+</ScrollView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+android:background="@drawable/diet"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+       <TableRow>
+       <CheckBox 
+           android:id="@+id/tea"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            android:text="@string/tea"
+           />
+</TableRow>
+<TableRow>
+       <CheckBox 
+           android:id="@+id/rice"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            android:text="@string/rice"
+           />
+       
+       
+       </TableRow>
+<TableRow>
+       <CheckBox 
+           android:id="@+id/dal"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            android:text="@string/dal"
+           />
+       
+       
+       </TableRow>    		
+    		<Button
+		    android:id="@+id/clickher"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/clickher"
+		android:onClick="onClickm" />
+        
+
+</TableLayout>
