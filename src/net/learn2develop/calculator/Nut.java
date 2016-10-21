@@ -7,8 +7,6 @@ import android.widget.CalendarView;
 import android.widget.CalendarView.OnDateChangeListener;
 import android.widget.Toast;
 
-//    import android.view.View;
-
 
 public class Nut extends Activity {
     @Override
