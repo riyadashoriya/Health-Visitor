@@ -6,21 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 //import android.widget.TextView;
 
-public class Result extends Activity{
+public class Result extends Activity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
 
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.result);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.result);
 
-	
-	
-	}
 
-public void onClickr(View view)
-{
-	Intent i = new Intent(Result.this,Checkedoptions.class);
-	startActivity(i);
-}
+    }
+
+    public void onClickr(View view) {
+        Intent i = new Intent(Result.this, Checkedoptions.class);
+        startActivity(i);
+    }
 }
